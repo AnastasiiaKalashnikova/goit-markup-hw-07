@@ -140,7 +140,10 @@ textarea {
     padding: 0;
     border: none;
     height: 22px;
+    width: 32px;
+    border-color: transparent;
 }
+
 
 
 .mobile-menu {
@@ -167,18 +170,39 @@ textarea {
     pointer-events: all;
 }
 
+
 .mobile-menu-close-btn {
     position: absolute;
     top: 24px;
     right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     border: none;
     background-color: transparent;
     height: 24px;
+    width: 24px;
+    background-color: rgba(231, 233, 252, 0.1);
     border-radius: 50%;
-    border: 1px solid var(--dark);
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    transition: background-color 250ms var(--cubic);
 }
 
+.mobile-menu-close-icon {
+    fill: var(--dark);
+    transition: fill 250ms var(--cubic);
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+    background-color: var(--pressed-state);
+}
+
+.mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-close-btn:focus .mobile-menu-close-icon {
+    fill: var(--basik-white);
+}
 
 .mobile-menu-link {
 font-weight: 700;
