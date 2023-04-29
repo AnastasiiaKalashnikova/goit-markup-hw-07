@@ -233,7 +233,7 @@ color: var(--dark);
     letter-spacing: 0.02em;
 }
 
-.mobile-contact-list>li {
+.mobile-contact-list>li:not(:last-child) {
     margin-bottom: 40px;
 }
 
