@@ -217,7 +217,7 @@ color: var(--dark);
 }
 
 .mobile-menu-list {
-    margin-bottom: 284px;
+    margin-bottom: auto;
 }
 
 .mobile-contact {
