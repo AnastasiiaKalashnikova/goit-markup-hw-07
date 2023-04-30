@@ -154,7 +154,7 @@ textarea {
     left: 0;
     z-index: 100;
     background-color: var(--basik-white);
-    padding: 80px 40px 40px 40px;
+    padding: 80px 35px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
